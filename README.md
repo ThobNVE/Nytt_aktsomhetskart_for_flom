@@ -5,12 +5,19 @@ Scripten ble testet i vassdrag nr. 122, "Gaula", Trondheims-region.
 Scripten etableres snart, det er krav for å ha spesifikk mappesystem for det å fungere.
 Mappesystem er som følges:
 >/HOVED MAPPE/
+
 >            > /BURNED/       # For DTM innbrent med elvdata som .tif filer
+
 >            > /envs/         # For Python miljø .yml (ikke nødvendig)
+
 >            > /FLOWACC/      # For Flow Accumulation .tif filer
+
 >            > /OUT/          # For DTM som er skalert til et valgt oppløsning
+
 >            > /RAW/          # For raw 1 m DTM data lastet ned fra geonorge
+
 >            > /Scripts/      # For scriptene, både .ipynb og .py
+
 >            > /Skalering/    # For test-scripts for skaleringsmetodikk (ikke nødvendig hvis skalerings-script eksisterer i /Scritps)
 
 # Senere kan scriptene bransje ut med utvikling av bedre metodikk.
