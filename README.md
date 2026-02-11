@@ -28,32 +28,32 @@ Ta hensyn på lagringsplassen deres, og jobbe med bare ETT vassdrag per brukssak
 
 # Det finnes flere filsti i denne scripten. De er som følges:
 Raw 1m DTM filer:       
-RAW_PATH: >"../RAW/"
+>RAW_PATH: "../RAW/"
                         
-RAW_DTM: >f"{RAW_path}VD_{vassdrag_basin_name}_DTM.tif"
+>RAW_DTM: f"{RAW_path}VD_{vassdrag_basin_name}_DTM.tif"
                     
 Skalert DTM filer:      
-RS_PATH: >"../OUT/"
+>RS_PATH: "../OUT/"
                         
-RS_DTM: >f"{RS_DIR}VD_{vassdrag_basin_name}_R{int(target_res)}m.tif"
+>RS_DTM: f"{RS_DIR}VD_{vassdrag_basin_name}_R{int(target_res)}m.tif"
 
 Brennt DTM filer:       
-BN_PATH: >"../BURNED/"
+>BN_PATH: "../BURNED/"
                         
-BN_DTM: >f"{BN_PATH}VD_{vassdrag_basin_name}_RB{burn_depth}_R{int(target_res)}m.tif"
+>BN_DTM: f"{BN_PATH}VD_{vassdrag_basin_name}_RB{burn_depth}_R{int(target_res)}m.tif"
 
 Elvnett mask:           
-RNET_PATH: >"../RNET/"
+>RNET_PATH: "../RNET/"
                         
-RNET_FIL: >f"{RNET_PATH}VD{vassdrag_basin_name}_RB{burn_depth}_INV_R{int(target_res)}m.tif"
+>RNET_FIL: f"{RNET_PATH}VD{vassdrag_basin_name}_RB{burn_depth}_INV_R{int(target_res)}m.tif"
 
 Fikset brennt DTM:      
-BN_FIX: >f"{BN_PATH}VD_{vassdrag_basin_name}_RB{burn_depth}_FILL_R{int(target_res)}m.tif"
+>BN_FIX: f"{BN_PATH}VD_{vassdrag_basin_name}_RB{burn_depth}_FILL_R{int(target_res)}m.tif"
                         
-BN_FIX_RND = >f"{FACC_path}VD_{vassdrag_basin_name}_RB{burn_depth}_FILL_RD_R{int(target_res)}m.tif"
+>BN_FIX_RND = f"{FACC_path}VD_{vassdrag_basin_name}_RB{burn_depth}_FILL_RD_R{int(target_res)}m.tif"
                   
 Flow accumulation:      
-FACC_PATH: >"../FLOWACC/"
+>FACC_PATH: "../FLOWACC/"
 
-FACC_FIL: >f"{FACC_PATH}FAC_VD_{vassdrag_basin_name}_RB{burn_depth}_FILL_RD_R{int(target_res)}m.tif"
+>FACC_FIL: f"{FACC_PATH}FAC_VD_{vassdrag_basin_name}_RB{burn_depth}_FILL_RD_R{int(target_res)}m.tif"
 
