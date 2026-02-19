@@ -1,4 +1,4 @@
-# Nytt_aktsomhetskart_for_flom
+# Nytt aktsomhetskart for flom
 For oppbygging av grunnmodellen til NVEs nytt aktsomhetskart for flom.
 Scripten ble testet i vassdrag nr. 122, "Gaula", Trondheims-region.
 
