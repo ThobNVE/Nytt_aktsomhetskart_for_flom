@@ -2,13 +2,17 @@
 For oppbygging av grunnmodellen til NVEs nytt aktsomhetskart for flom.
 Scripten ble testet i vassdrag nr. 122, "Gaula", Trondheims-region.
 
-Scripten etableres snart, det er krav for å ha spesifikk mappesystem for det å fungere.
+Det er krav for å ha spesifikk mappesystem for det å fungere.
 Mappesystem er som følges:
 >/HOVED MAPPE/
 
 >            > /BURNED/       # For DTM innbrent med elvdata som .tif filer
 
->            > /envs/         # For Python miljø .yml (ikke nødvendig)
+>            > /ELV/          # For Elvenettdata produsert av DTM.
+
+>            > /FLD/          # Flomområder
+
+>            > /RNET/         # Invertert elvenettverk for innbrenning og geometri endring
 
 >            > /FLOWACC/      # For Flow Accumulation .tif filer
 
@@ -16,18 +20,40 @@ Mappesystem er som følges:
 
 >            > /RAW/          # For raw 1 m DTM data lastet ned fra geonorge
 
+>            > /FDIR/         # For strømretning data 
+
 >            > /Scripts/      # For scriptene, både .ipynb og .py
 
 >            > /Skalering/    # For test-scripts for skaleringsmetodikk (ikke nødvendig hvis skalerings-script eksisterer i /Scritps)
 
+>            > /envs/         # For Python miljø .yml (ikke nødvendig)
+
 # Senere kan scriptene bransje ut med utvikling av bedre metodikk.
 
 # Neste steg med grunn-scripten:
-6. clean up code for clear paths
-7. Bygg og inkludere flom-beregningene
-8. Test med 10m data for flomkartlegging
-9. Test med 1m data for flomkartlegging
-10. Inkludere innsjøer.
+2.	Pyflwdir – sensitivity analyse
+    2.1.	Gjentaksinterval
+  	
+    2.2.	B verdi for 1:200
+  	
+    2.3.	Forskjellige områder
+  	
+    2.4.	Verdi for «vannfylker»
+  	
+    2.5.	HAND method investigere
+  	
+4.	Bruk pyflwdir opp til minimal area subbasins celle og prøve:
+    3.1.	Tverrprofiler metode
+  	
+    3.2.	Differential VSS over område – «VSS verdi» reduserer over hvert cell fra opprinelse – kan ble enkelt for å inkludere infiltrasjon senere
+  	
+    3.3.	Kernel method – litt det samme men med kernel og vekt av reduseringsverdi med «helning» som vekt.
+  	
+    3.3.1.	HAND method? Må investigere HAND = tverrprofiler.
+6.	Les gjennom dokumentene
+7.	Autoroute testing. – Petra
+8.	
+    5.1.	LISFLOOD & AUTOROUTE
 
 # Hensyn til lagringsplass
 Flere av filene i scripten trenger opp til 1GB lagringsplass per .tif fil. Videre, trenger "raw-dtm" mellom 10 - flere hundre GB lagringsplass for å laste ned i 1m oppløsning.
@@ -63,4 +89,26 @@ Flow accumulation:
 >FACC_PATH: "../FLOWACC/"
 
 >FACC_FIL: f"{FACC_PATH}FAC_VD_{vassdrag_basin_name}_RB{burn_depth}_FILL_RD_R{int(target_res)}m.tif"
+
+Strahler Stream Order:
+>STRAHLER_PATH = "../ELV/"
+
+>STRAHLER_FIL = f"{STRAHLER_PATH}SORD_VD_{vassdrag_basin_name}_RB{burn_depth}_R{int(target_res)}m.tif"
+
+Strømretning
+>FDIR_PATH = "../FDIR"
+
+FDIR_FIL = f"{FDIR_PATH}FDIR_VD_{vassdrag_basin_name}_RB{burn_depth}_R{int(target_res)}m.tif"
+
+Flom-output (ENKELT)
+>FLD_PATH = "../FLD"
+
+>FLD_FIL_ELVIS = f"{FLD_PATH}FLD_{b}_VD_{vassdrag_basin_name}_RB{burn_depth}_R{int(target_res)}m_ELVIS.tif"
+
+>FLD_FIL_STREAMS = f"{FLD_PATH}FLD_{b}_VD_{vassdrag_basin_name}_RB{burn_depth}_R{int(target_res)}m_STREAMS.tif"
+
+>FLD_FIL_ELVIS_VEC = f"{FLD_PATH}FLD_{b}_VD_{vassdrag_basin_name}_RB{burn_depth}_R{int(target_res)}m_ELVIS.gpkg"
+
+>FLD_FIL_STREAMS_VEC = f"{FLD_PATH}FLD_{b}_VD_{vassdrag_basin_name}_RB{burn_depth}_R{int(target_res)}m_STREAMS.gpkg"
+
 
