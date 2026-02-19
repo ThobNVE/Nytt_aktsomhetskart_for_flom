@@ -6,6 +6,7 @@ Før du begynne å bruke, må du:
 1. Oppsett et Anaconda-python system.
 2. Bygg conda miljøet med Python_GIS.yml (i /envs/)
 3. Aktivere Python_GIS miljøet (i powershell hvis du bruker jupyter, eller i VS Studio/ annet Python programvare)
+4. Åpne hovedscripten "Nytt_aktsomhetskart.ipynb" i /Scripts/ med VSCode, jupyter eller lignende programvare.
 
 Det er krav for å ha spesifikk mappesystem for det å fungere.
 Mappesystem er som følges:
