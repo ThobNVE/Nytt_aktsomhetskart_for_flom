@@ -55,10 +55,9 @@ Mappesystem er som følges:
     3.3.	Kernel method – litt det samme men med kernel og vekt av reduseringsverdi med «helning» som vekt.
   	
     3.3.1.	HAND method? Må investigere HAND = tverrprofiler.
-6.	Les gjennom dokumentene
-7.	Autoroute testing. – Petra
-8.	
-    5.1.	LISFLOOD & AUTOROUTE
+6.	Les gjennom dokumentene for utvikling av modellen
+7.	Autoroute testing.
+8.	LISFLOOD & AUTOROUTE
 
 # Hensyn til lagringsplass
 Flere av filene i scripten trenger opp til 1GB lagringsplass per .tif fil. Videre, trenger "raw-dtm" mellom 10 - flere hundre GB lagringsplass for å laste ned i 1m oppløsning.
