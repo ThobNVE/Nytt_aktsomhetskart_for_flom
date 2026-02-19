@@ -2,6 +2,11 @@
 For oppbygging av grunnmodellen til NVEs nytt aktsomhetskart for flom.
 Scripten ble testet i vassdrag nr. 122, "Gaula", Trondheims-region.
 
+Før du begynne å bruke, må du:
+1. Oppsett et Anaconda-python system.
+2. Bygg conda miljøet med Python_GIS.yml (i /envs/)
+3. Aktivere Python_GIS miljøet (i powershell hvis du bruker jupyter, eller i VS Studio/ annet Python programvare)
+
 Det er krav for å ha spesifikk mappesystem for det å fungere.
 Mappesystem er som følges:
 >/HOVED MAPPE/
