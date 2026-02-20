@@ -116,4 +116,13 @@ Flom-output (ENKELT)
 
 >FLD_FIL_STREAMS_VEC = f"{FLD_PATH}FLD_{b}_VD_{vassdrag_basin_name}_RB{burn_depth}_R{int(target_res)}m_STREAMS.gpkg"
 
+Flom-output (VANLIG)
+> AKT_FIL_DTM = f"{FLD_PATH}AKT_DTM_{b}_VD_{vassdrag_basin_name}_STO{min_sto}_RB{burn_depth}_R{int(target_res)}m.tif"
+
+> AKT_FIL_ELVIS = f"{FLD_PATH}AKT_ELVIS_{b}_VD_{vassdrag_basin_name}_STO{min_sto}_RB{burn_depth}_R{int(target_res)}m.tif"
+
+>  AKT_FIL_DTM_VEC = f"{FLD_PATH}AKT_DTM_{b}_VD_{vassdrag_basin_name}_STO{min_sto}_RB{burn_depth}_R{int(target_res)}m.tif"
+
+> AKT_FIL_ELVIS_VEC = f"{FLD_PATH}AKT_ELVIS_{b}_VD_{vassdrag_basin_name}_STO{min_sto}_RB{burn_depth}_R{int(target_res)}m.tif"
+
 
