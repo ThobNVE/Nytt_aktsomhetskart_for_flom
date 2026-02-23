@@ -66,13 +66,13 @@ Investigasjon om vifter.
 
 Ulike gjentaksintervaler.
 
-1:50, 1:100, 1:200, 1:500 ?
++ 1:50, 1:100, 1:200, 1:500 ?
 
 Lokale klimaer/regimer: Snø / Bre o.s.v.
 
 «Flomregimeregioner»: 
 
-teste «best-sak» parametere for f. eks: Innlandet, Nord, Øst, Sør, Vest Norge.
++ teste «best-sak» parametere for f. eks: Innlandet, Nord, Øst, Sør, Vest Norge.
 
 # Hensyn til lagringsplass
 Flere av filene i scripten trenger opp til 1GB lagringsplass per .tif fil. Videre, trenger "raw-dtm" mellom 10 - flere hundre GB lagringsplass for å laste ned i 1m oppløsning.
