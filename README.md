@@ -1,4 +1,4 @@
-# Nytt aktsomhetskart for flom
+<img width="1747" height="291" alt="bilde" src="https://github.com/user-attachments/assets/c7585e0d-ddee-4ae1-91f5-11ed6058d78a" /># Nytt aktsomhetskart for flom
 For oppbygging av grunnmodellen til NVEs nytt aktsomhetskart for flom.
 Scripten ble testet i vassdrag nr. 122, "Gaula", Trondheims-region.
 
@@ -37,28 +37,42 @@ Mappesystem er som følges:
 # Senere kan scriptene bransje ut med utvikling av bedre metodikk.
 
 # Neste steg med grunn-scripten:
-2.	Pyflwdir – sensitivity analyse
-    2.1.	Gjentaksinterval
-  	
-    2.2.	B verdi for 1:200
-  	
-    2.3.	Forskjellige områder
-  	
-    2.4.	Verdi for «vannfylker»
-  	
-    2.5.	HAND method investigere
-  	
-4.	Bruk pyflwdir opp til minimal area subbasins celle og prøve:
-    3.1.	Tverrprofiler metode
-  	
-    3.2.	Differential VSS over område – «VSS verdi» reduserer over hvert cell fra opprinelse – kan ble enkelt for å inkludere infiltrasjon senere
-  	
-    3.3.	Kernel method – litt det samme men med kernel og vekt av reduseringsverdi med «helning» som vekt.
-  	
-    3.3.1.	HAND method? Må investigere HAND = tverrprofiler.
-6.	Les gjennom dokumentene for utvikling av modellen
-7.	Autoroute testing.
-8.	LISFLOOD & AUTOROUTE
+
+# Må gjøres: 
+
+Test av ProbHAND metoden.
+
+Test av høyere oppløsningsdata (e.g. 5m, for 1m er litt komplisert).
+
+En løsning for problemer som kommer fra små sideelv/NBF
+
+# Kan testes:
+
+Effekt av vannregulering og broer.
+
+Innsjøer kan også inkluderes.
+
+Infiltrasjonsverdier med løsmassekart.
+
++ Skogområder
+
++ Jordbruk
+
+Forbedring av vannstandstignings-beregninger.
+
+Implementering av «flomusikkerhet» på kanten av aktsomhetsområder.
+
+Investigasjon om vifter.
+
+Ulike gjentaksintervaler.
+
+1:50, 1:100, 1:200, 1:500 ?
+
+Lokale klimaer/regimer: Snø / Bre o.s.v.
+
+«Flomregimeregioner»: 
+
+teste «best-sak» parametere for f. eks: Innlandet, Nord, Øst, Sør, Vest Norge.
 
 # Hensyn til lagringsplass
 Flere av filene i scripten trenger opp til 1GB lagringsplass per .tif fil. Videre, trenger "raw-dtm" mellom 10 - flere hundre GB lagringsplass for å laste ned i 1m oppløsning.
