@@ -117,7 +117,7 @@ Strahler Stream Order:
 Strømretning
 >FDIR_PATH = "../FDIR"
 
-FDIR_FIL = f"{FDIR_PATH}FDIR_VD_{vassdrag_basin_name}_RB{burn_depth}_R{int(target_res)}m.tif"
+>FDIR_FIL = f"{FDIR_PATH}FDIR_VD_{vassdrag_basin_name}_RB{burn_depth}_R{int(target_res)}m.tif"
 
 Flom-output (ENKELT)
 >FLD_PATH = "../FLD"
