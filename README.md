@@ -1,4 +1,4 @@
-<img width="1747" height="291" alt="bilde" src="https://github.com/user-attachments/assets/c7585e0d-ddee-4ae1-91f5-11ed6058d78a" /># Nytt aktsomhetskart for flom
+# Nytt aktsomhetskart for flom
 For oppbygging av grunnmodellen til NVEs nytt aktsomhetskart for flom.
 Scripten ble testet i vassdrag nr. 122, "Gaula", Trondheims-region.
 
